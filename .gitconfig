@@ -1,0 +1,30 @@
+[user]
+	name = Alexander Burkut
+	email = a.burkut90@gmail.com
+[alias]
+        st = status
+        cm = commit
+        br = branch
+        co = checkout
+        df = diff
+        lg = log -p
+	graph = log --graph --all --format=format:'%C(blue)%h%C(reset) - %C(green)(%ar)%C(reset) %C(white)%s%C(reset) %C(white)- %an%C(reset)%C(yellow)%d%C(reset)' --abbrev-commit --date=relative
+	graph-iso = log --graph --all --format=format:'%C(blue)%h%C(reset) - %C(green)(%ai)%C(reset) %C(white)%s%C(reset) %C(white)- %an%C(reset)%C(yellow)%d%C(reset)' --abbrev-commit
+[core]
+	editor = vim
+        excludesfile = ~/.gitignore_global
+[color]
+	ui = true
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+[color "status"]
+	added = green
+	changed = red
+	untracked = red
+[color "diff"]
+	old = red
+	new = green
+[push]
+	default = current
